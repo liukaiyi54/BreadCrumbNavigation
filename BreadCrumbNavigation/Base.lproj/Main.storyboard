@@ -12,7 +12,8 @@
         <!--Navigation Controller-->
         <scene sceneID="sPz-P7-ZvD">
             <objects>
-                <navigationController id="BRV-fn-Zqp" sceneMemberID="viewController">
+                <navigationController id="BRV-fn-Zqp" customClass="DEMONavigationController" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="a3Q-M6-Hyq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

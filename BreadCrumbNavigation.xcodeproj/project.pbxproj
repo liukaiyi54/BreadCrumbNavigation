@@ -28,6 +28,7 @@
 		4C6B15871E0B5D5B00227EDE /* Home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6B157A1E0B5D5B00227EDE /* Home@2x.png */; };
 		4C6B158B1E0B607700227EDE /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B15891E0B607700227EDE /* DemoViewController.m */; };
 		4C8A75B41E135F350023ABDA /* DemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C8A75B31E135F350023ABDA /* DemoViewController.xib */; };
+		4CD9F2DE1E16054300B9BD75 /* DEMONavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD9F2DD1E16054300B9BD75 /* DEMONavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,8 @@
 		4C6B15881E0B607700227EDE /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
 		4C6B15891E0B607700227EDE /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 		4C8A75B31E135F350023ABDA /* DemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DemoViewController.xib; path = DTNavigationController/DemoViewController.xib; sourceTree = "<group>"; };
+		4CD9F2DC1E16054300B9BD75 /* DEMONavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMONavigationController.h; sourceTree = "<group>"; };
+		4CD9F2DD1E16054300B9BD75 /* DEMONavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMONavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,8 @@
 				4C6B15561E0B5CF400227EDE /* ViewController.h */,
 				4C6B15571E0B5CF400227EDE /* ViewController.m */,
 				4C6B15591E0B5CF400227EDE /* Main.storyboard */,
+				4CD9F2DC1E16054300B9BD75 /* DEMONavigationController.h */,
+				4CD9F2DD1E16054300B9BD75 /* DEMONavigationController.m */,
 				4C6B15881E0B607700227EDE /* DemoViewController.h */,
 				4C6B15891E0B607700227EDE /* DemoViewController.m */,
 				4C8A75B31E135F350023ABDA /* DemoViewController.xib */,
@@ -241,6 +246,7 @@
 				4C6B157B1E0B5D5B00227EDE /* DTFolderBar.m in Sources */,
 				4C6B15551E0B5CF400227EDE /* AppDelegate.m in Sources */,
 				4C6B158B1E0B607700227EDE /* DemoViewController.m in Sources */,
+				4CD9F2DE1E16054300B9BD75 /* DEMONavigationController.m in Sources */,
 				4C6B15521E0B5CF400227EDE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

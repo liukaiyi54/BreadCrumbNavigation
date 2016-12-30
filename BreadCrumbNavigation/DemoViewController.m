@@ -8,8 +8,10 @@
 
 #import "DemoViewController.h"
 #import "DTNavigationController.h"
+#import "DTFolderConfig.h"
 
 @interface DemoViewController () <UITableViewDelegate, UITableViewDataSource>
+
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
@@ -21,18 +23,14 @@
     
     self.title = @"卓望集团";
     
+    self.navigationItem.hidesBackButton = YES;
+    
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    
-    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
-        self.navigationController.interactivePopGestureRecognizer.enabled = NO;
-    }
 }
 
 #pragma mark - Table view data source
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    // Return the number of rows in the section.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 2;
 }
 
