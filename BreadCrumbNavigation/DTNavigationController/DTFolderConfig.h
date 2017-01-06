@@ -37,8 +37,8 @@
 #define kBarBlackgroundImage            @""
 
 // Action Button Blackground Image
-#define kActionButtonImage              @"ActionBtn.png"
-#define kActionButtonPressImage         @"ActionBtnPress.png"
+#define kActionButtonImage              @""
+#define kActionButtonPressImage         @""
 
 ///////////////////////////////////////////////////////////////////////////////
 
