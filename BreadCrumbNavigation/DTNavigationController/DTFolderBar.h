@@ -16,21 +16,16 @@
 // limitations under the License.
 
 #import <UIKit/UIKit.h>
-#import "DTFolderStyle.h"
 
 @class DTFolderItem;
 
-
 @interface DTFolderBar : UIView
 
-@property (nonatomic, assign ,readonly) DTFolderBarStyle style;
 @property (nonatomic, retain) NSArray *folderItems;     // DTFolderItems in DTFolderBar.
 @property (nonatomic, retain) UIImage *backgroundImage; // Defaul is nil.
 @property (nonatomic, readonly) UIButton *actionButton; // nil at DTFolderBarStyleNormal & DTFolderBarStyleFixedHome style.
-@property (nonatomic, retain) DTFolderItem *leftItem;   // Must set folderItem at DTFolderBarStyleFixedLeftHome and DTFolderBarStyleFixedAll style.
 
 + (id)folderBarWithFrame:(CGRect)frame;
-+ (id)folderBarWithFrame:(CGRect)frame style:(DTFolderBarStyle)style;
 
 - (void)setFolderItems:(NSArray *)folderItems animated:(BOOL)animated;
 

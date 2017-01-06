@@ -15,17 +15,6 @@
 		4C6B15601E0B5CF500227EDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C6B155E1E0B5CF500227EDE /* LaunchScreen.storyboard */; };
 		4C6B157B1E0B5D5B00227EDE /* DTFolderBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B15691E0B5D5B00227EDE /* DTFolderBar.m */; };
 		4C6B157C1E0B5D5B00227EDE /* DTFolderItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B156C1E0B5D5B00227EDE /* DTFolderItem.m */; };
-		4C6B157D1E0B5D5B00227EDE /* DTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B156F1E0B5D5B00227EDE /* DTNavigationController.m */; };
-		4C6B157E1E0B5D5B00227EDE /* ActionBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6B15711E0B5D5B00227EDE /* ActionBtn.png */; };
-		4C6B157F1E0B5D5B00227EDE /* ActionBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6B15721E0B5D5B00227EDE /* ActionBtn@2x.png */; };
-		4C6B15801E0B5D5B00227EDE /* ActionBtnPress.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6B15731E0B5D5B00227EDE /* ActionBtnPress.png */; };
-		4C6B15811E0B5D5B00227EDE /* ActionBtnPress@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6B15741E0B5D5B00227EDE /* ActionBtnPress@2x.png */; };
-		4C6B15821E0B5D5B00227EDE /* FolderBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6B15751E0B5D5B00227EDE /* FolderBar.png */; };
-		4C6B15831E0B5D5B00227EDE /* FolderBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6B15761E0B5D5B00227EDE /* FolderBar@2x.png */; };
-		4C6B15841E0B5D5B00227EDE /* FolderItemBgImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6B15771E0B5D5B00227EDE /* FolderItemBgImage.png */; };
-		4C6B15851E0B5D5B00227EDE /* FolderItemBgImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6B15781E0B5D5B00227EDE /* FolderItemBgImage@2x.png */; };
-		4C6B15861E0B5D5B00227EDE /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6B15791E0B5D5B00227EDE /* Home.png */; };
-		4C6B15871E0B5D5B00227EDE /* Home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6B157A1E0B5D5B00227EDE /* Home@2x.png */; };
 		4C6B158B1E0B607700227EDE /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6B15891E0B607700227EDE /* DemoViewController.m */; };
 		4C8A75B41E135F350023ABDA /* DemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C8A75B31E135F350023ABDA /* DemoViewController.xib */; };
 		4CD9F2DE1E16054300B9BD75 /* DEMONavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD9F2DD1E16054300B9BD75 /* DEMONavigationController.m */; };
@@ -47,19 +36,6 @@
 		4C6B156A1E0B5D5B00227EDE /* DTFolderConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTFolderConfig.h; sourceTree = "<group>"; };
 		4C6B156B1E0B5D5B00227EDE /* DTFolderItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTFolderItem.h; sourceTree = "<group>"; };
 		4C6B156C1E0B5D5B00227EDE /* DTFolderItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTFolderItem.m; sourceTree = "<group>"; };
-		4C6B156D1E0B5D5B00227EDE /* DTFolderStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTFolderStyle.h; sourceTree = "<group>"; };
-		4C6B156E1E0B5D5B00227EDE /* DTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTNavigationController.h; sourceTree = "<group>"; };
-		4C6B156F1E0B5D5B00227EDE /* DTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTNavigationController.m; sourceTree = "<group>"; };
-		4C6B15711E0B5D5B00227EDE /* ActionBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ActionBtn.png; sourceTree = "<group>"; };
-		4C6B15721E0B5D5B00227EDE /* ActionBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ActionBtn@2x.png"; sourceTree = "<group>"; };
-		4C6B15731E0B5D5B00227EDE /* ActionBtnPress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ActionBtnPress.png; sourceTree = "<group>"; };
-		4C6B15741E0B5D5B00227EDE /* ActionBtnPress@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ActionBtnPress@2x.png"; sourceTree = "<group>"; };
-		4C6B15751E0B5D5B00227EDE /* FolderBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FolderBar.png; sourceTree = "<group>"; };
-		4C6B15761E0B5D5B00227EDE /* FolderBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FolderBar@2x.png"; sourceTree = "<group>"; };
-		4C6B15771E0B5D5B00227EDE /* FolderItemBgImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FolderItemBgImage.png; sourceTree = "<group>"; };
-		4C6B15781E0B5D5B00227EDE /* FolderItemBgImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FolderItemBgImage@2x.png"; sourceTree = "<group>"; };
-		4C6B15791E0B5D5B00227EDE /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
-		4C6B157A1E0B5D5B00227EDE /* Home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home@2x.png"; sourceTree = "<group>"; };
 		4C6B15881E0B607700227EDE /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
 		4C6B15891E0B607700227EDE /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 		4C8A75B31E135F350023ABDA /* DemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DemoViewController.xib; path = DTNavigationController/DemoViewController.xib; sourceTree = "<group>"; };
@@ -132,29 +108,8 @@
 				4C6B156A1E0B5D5B00227EDE /* DTFolderConfig.h */,
 				4C6B156B1E0B5D5B00227EDE /* DTFolderItem.h */,
 				4C6B156C1E0B5D5B00227EDE /* DTFolderItem.m */,
-				4C6B156D1E0B5D5B00227EDE /* DTFolderStyle.h */,
-				4C6B156E1E0B5D5B00227EDE /* DTNavigationController.h */,
-				4C6B156F1E0B5D5B00227EDE /* DTNavigationController.m */,
-				4C6B15701E0B5D5B00227EDE /* Images */,
 			);
 			path = DTNavigationController;
-			sourceTree = "<group>";
-		};
-		4C6B15701E0B5D5B00227EDE /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				4C6B15711E0B5D5B00227EDE /* ActionBtn.png */,
-				4C6B15721E0B5D5B00227EDE /* ActionBtn@2x.png */,
-				4C6B15731E0B5D5B00227EDE /* ActionBtnPress.png */,
-				4C6B15741E0B5D5B00227EDE /* ActionBtnPress@2x.png */,
-				4C6B15751E0B5D5B00227EDE /* FolderBar.png */,
-				4C6B15761E0B5D5B00227EDE /* FolderBar@2x.png */,
-				4C6B15771E0B5D5B00227EDE /* FolderItemBgImage.png */,
-				4C6B15781E0B5D5B00227EDE /* FolderItemBgImage@2x.png */,
-				4C6B15791E0B5D5B00227EDE /* Home.png */,
-				4C6B157A1E0B5D5B00227EDE /* Home@2x.png */,
-			);
-			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,19 +171,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C6B15861E0B5D5B00227EDE /* Home.png in Resources */,
-				4C6B157F1E0B5D5B00227EDE /* ActionBtn@2x.png in Resources */,
-				4C6B15831E0B5D5B00227EDE /* FolderBar@2x.png in Resources */,
-				4C6B15821E0B5D5B00227EDE /* FolderBar.png in Resources */,
-				4C6B15811E0B5D5B00227EDE /* ActionBtnPress@2x.png in Resources */,
 				4C6B15601E0B5CF500227EDE /* LaunchScreen.storyboard in Resources */,
-				4C6B15871E0B5D5B00227EDE /* Home@2x.png in Resources */,
 				4C8A75B41E135F350023ABDA /* DemoViewController.xib in Resources */,
-				4C6B15841E0B5D5B00227EDE /* FolderItemBgImage.png in Resources */,
 				4C6B155D1E0B5CF400227EDE /* Assets.xcassets in Resources */,
-				4C6B157E1E0B5D5B00227EDE /* ActionBtn.png in Resources */,
-				4C6B15801E0B5D5B00227EDE /* ActionBtnPress.png in Resources */,
-				4C6B15851E0B5D5B00227EDE /* FolderItemBgImage@2x.png in Resources */,
 				4C6B155B1E0B5CF400227EDE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,7 +186,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C6B157C1E0B5D5B00227EDE /* DTFolderItem.m in Sources */,
-				4C6B157D1E0B5D5B00227EDE /* DTNavigationController.m in Sources */,
 				4C6B15581E0B5CF400227EDE /* ViewController.m in Sources */,
 				4C6B157B1E0B5D5B00227EDE /* DTFolderBar.m in Sources */,
 				4C6B15551E0B5CF400227EDE /* AppDelegate.m in Sources */,

@@ -7,7 +7,7 @@
 //
 
 #import "DemoViewController.h"
-#import "DTNavigationController.h"
+#import "DTFolderBar.h"
 #import "DTFolderConfig.h"
 
 @interface DemoViewController () <UITableViewDelegate, UITableViewDataSource>

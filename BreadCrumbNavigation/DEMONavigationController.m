@@ -56,7 +56,7 @@
     
     if (!_folderBar) {
         CGRect frame = CGRectMake(0, 64, self.view.frame.size.width, 40);
-        _folderBar = [DTFolderBar folderBarWithFrame:frame style:DTFolderBarStyleNormal];
+        _folderBar = [DTFolderBar folderBarWithFrame:frame];
         [_folderBar setTag:1999];
     }
     [self.view addSubview:_folderBar];

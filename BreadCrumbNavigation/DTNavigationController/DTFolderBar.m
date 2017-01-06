@@ -35,11 +35,7 @@ typedef void (^DTCompletionBlock) (BOOL finshed);
 
 @interface DTFolderBar ()
 {
-    DTFolderBarStyle _style;
     NSMutableArray *_folderItems; // Saved folderItem array
-    
-    DTFolderItem *_leftItem;
-    UIButton *_actionButton;
 }
 
 @end
@@ -55,19 +51,7 @@ typedef void (^DTCompletionBlock) (BOOL finshed);
     return folderBar;
 }
 
-+ (id)folderBarWithFrame:(CGRect)frame style:(DTFolderBarStyle)style
-{
-    DTFolderBar *folderBar = [[DTFolderBar alloc] initWithFrame:frame style:style];
-    
-    return folderBar;
-}
-
 - (id)initWithFrame:(CGRect)frame
-{
-    return [self initWithFrame:frame style:DTFolderBarStyleNormal];
-}
-
-- (id)initWithFrame:(CGRect)frame style:(DTFolderBarStyle)style
 {
     self = [super initWithFrame:frame];
     if (self == nil) return nil;
@@ -75,7 +59,6 @@ typedef void (^DTCompletionBlock) (BOOL finshed);
     [self setClipsToBounds:YES];
     [self setBackgroundColor:[UIColor whiteColor]];
     
-    _style = style;
     _folderItems = [NSMutableArray new];
     
     UIViewAutoresizing autoresizing = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
@@ -86,27 +69,6 @@ typedef void (^DTCompletionBlock) (BOOL finshed);
     [backgroundView setAutoresizingMask:autoresizing];
     
     CGRect scrollViewFrame = self.bounds;
-    
-    if (_style == DTFolderBarStyleFixedLeftHome || _style == DTFolderBarStyleFixedHomeAndAtionButton) {
-        scrollViewFrame.origin.x += 22.0f;
-        scrollViewFrame.size.width -= 22.0f;
-    }
-    
-    if (_style == DTFolderBarStyleActionButton || _style == DTFolderBarStyleFixedHomeAndAtionButton) {
-        scrollViewFrame.size.width -= 44.0f;
-        
-        CGRect actionButtomFrame = self.bounds;
-        actionButtomFrame.origin.x = scrollViewFrame.origin.x + scrollViewFrame.size.width - 2;
-        actionButtomFrame.size = CGSizeMake(44, 44);
-        
-        UIButton *actionButton = [UIButton buttonWithType:kButtonType];
-        [actionButton setBackgroundImage:[UIImage imageNamed:kActionButtonImage] forState:UIControlStateNormal];
-        [actionButton setBackgroundImage:[UIImage imageNamed:kActionButtonPressImage] forState:UIControlStateHighlighted];
-        [actionButton setFrame:actionButtomFrame];
-        [actionButton setAutoresizingMask:UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin];
-        
-        _actionButton = actionButton;
-    }
     
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:scrollViewFrame];
     [scrollView setTag:kScrollViewTag];
@@ -134,6 +96,7 @@ typedef void (^DTCompletionBlock) (BOOL finshed);
     [scrollView addSubview:folderItemView];
     
     return self;
+
 }
 
 #pragma mark - Add Folder Item Methods
@@ -242,78 +205,6 @@ typedef void (^DTCompletionBlock) (BOOL finshed);
             item.textLable.textColor = kFolderItemTextColor;
         }
     }
-}
-
-#pragma mark - Overwrite Methods
-#pragma mark #Style
-
-- (DTFolderBarStyle)style
-{
-    return _style;
-}
-
-#pragma mark #Background Image
-
-- (void)setBackgroundImage:(UIImage *)backgroundImage
-{
-    UIImageView *backgroundView = (UIImageView *)[self viewWithTag:kBackgroundViewTag];
-    [backgroundView setImage:backgroundImage];
-}
-
-- (UIImage *)backgroundImage
-{
-    UIImageView *backgroundView = (UIImageView *)[self viewWithTag:kBackgroundViewTag];
-    return backgroundView.image;
-}
-
-#pragma mark #LeftItem
-
-- (void)setLeftItem:(DTFolderItem *)leftItem
-{
-    if (_style == DTFolderBarStyleActionButton || _style == DTFolderBarStyleNormal) {
-        NSString *style = nil;
-        
-        switch (_style) {
-            case DTFolderBarStyleNormal:
-                style = @"DTFolderBarStyleNormal";
-                break;
-                
-            case DTFolderBarStyleActionButton:
-                style = @"DTFolderBarStyleActionButton";
-                break;
-                
-            default:
-                break;
-        }
-        
-        [NSException raise:NSInvalidArgumentException format:@"Style error, you style is %@", style];
-        
-        return;
-    }
-    
-    if (_leftItem != nil) {
-        [_leftItem removeFromSuperview];
-        _leftItem = nil;
-    }
-    
-    CGRect leftItemFrame = leftItem.frame;
-    leftItemFrame.origin = CGPointMake(0, 0);
-    
-    [leftItem setFrame:leftItemFrame];
-    
-    [self addSubview:_leftItem];
-}
-
-- (DTFolderItem *)leftItem
-{
-    return _leftItem;
-}
-
-#pragma mark #ActionButton
-
-- (UIButton *)actionButton
-{
-    return _actionButton;
 }
 
 @end

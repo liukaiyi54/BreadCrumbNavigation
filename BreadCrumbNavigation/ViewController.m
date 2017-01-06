@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 #import "DemoViewController.h"
-#import "DTNavigationController.h"
+
+#import "DTFolderBar.h"
 
 @interface ViewController ()
 
