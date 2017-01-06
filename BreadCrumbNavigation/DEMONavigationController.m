@@ -14,8 +14,9 @@
 @interface DEMONavigationController (){
     UIView *blockView;
     DTFolderBar *_folderBar;
+    UILabel *_label;
+    UIButton *_button;
 }
-@property (nonatomic, strong) NSMutableArray *folderItems;
 
 @end
 
@@ -23,7 +24,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
 }
 
 #pragma mark - Override
@@ -32,21 +32,25 @@
     
     if (!blockView) {
         blockView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 64)];
+        [blockView setTag:1998];
+        [blockView setBackgroundColor:[UIColor colorWithRed:26/255.0f green:193/255.0f blue:86/255.0f alpha:1]];
     }
-    [blockView setBackgroundColor:[UIColor colorWithRed:26/255.0f green:193/255.0f blue:86/255.0f alpha:1]];
 
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(self.view.frame.size.width/2-40, 20, 80, 40)];
-    label.text = @"卓望集团";
-    label.textColor = [UIColor whiteColor];
-    label.textAlignment = NSTextAlignmentCenter;
-    [blockView addSubview:label];
-    [blockView setTag:1998];
+    if (!_label) {
+        _label = [[UILabel alloc] initWithFrame:CGRectMake(self.view.frame.size.width/2-40, 20, 80, 40)];
+        _label.text = @"卓望集团";
+        _label.textColor = [UIColor whiteColor];
+        _label.textAlignment = NSTextAlignmentCenter;
+    }
+    [blockView addSubview:_label];
     
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 25, 40, 30)];
-    [button setImage:[UIImage imageNamed:@"nav_back_btn_selected"] forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(didTapBack) forControlEvents:UIControlEventTouchUpInside];
-    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [blockView addSubview:button];
+    if (!_button) {
+        _button = [[UIButton alloc] initWithFrame:CGRectMake(0, 25, 40, 30)];
+        [_button setImage:[UIImage imageNamed:@"nav_back_btn_selected"] forState:UIControlStateNormal];
+        [_button addTarget:self action:@selector(didTapBack) forControlEvents:UIControlEventTouchUpInside];
+        [_button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    }
+    [blockView addSubview:_button];
     
     [self.view addSubview:blockView];
     
@@ -81,9 +85,6 @@
 
 - (NSArray *)popToRootViewControllerAnimated:(BOOL)animated {
     NSMutableArray *folderItems = [NSMutableArray arrayWithArray:_folderBar.folderItems];
-    
-    //NSRange range = NSMakeRange(1, folderItems.count - 1);
-    //[folderItems removeObjectsInRange:range];
     [folderItems removeAllObjects];
     
     [_folderBar setFolderItems:folderItems animated:YES];
@@ -91,6 +92,7 @@
     return [super popToRootViewControllerAnimated:YES];
 }
 
+#pragma mark - event handlers
 - (void)tapFolderItem:(DTFolderItem *)sender {
     [sender setHightlighted:YES];
     
