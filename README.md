@@ -2,7 +2,7 @@
 
 A bread crumb like navigation. Looks like this.
 
-![123](https://cloud.githubusercontent.com/assets/3932207/21706153/dc3d87b6-d3ff-11e6-9378-a24a3d0b55c7.png)
+![jun-16-2017 22-54-47](https://user-images.githubusercontent.com/3932207/27232238-ddef399e-52e7-11e7-8ec5-61a3bb8b77a8.gif)
 
 # Usage
 
